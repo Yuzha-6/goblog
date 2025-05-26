@@ -1,2 +1,4 @@
 {"level":"INFO","time":"2025-05-25T11:45:50.856+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
 {"level":"INFO","time":"2025-05-25T17:20:14.135+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-05-26T22:15:14.132+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-05-26T22:17:50.546+0800","caller":"flag/enter.go:25","msg":"Successfully created table structure"}
