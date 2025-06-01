@@ -9,20 +9,17 @@ import (
 	"server/model/elasticsearch"
 	"server/model/other"
 	"time"
-	"server/utils"
+
 	"github.com/elastic/go-elasticsearch/v8/typedapi/types"
 )
 
 type durationvariant struct {
-
 }
 
-
-func (*durationvariant)DurationCaster() *types.Duration {
-	val str types.Duration = "1m"
+func (d *durationvariant) DurationCaster() *types.Duration {
+	str := types.Duration("1m")
 	return &str
 }
-
 
 // ElasticsearchExport 导出 ES 中的数据到 JSON 文件
 func ElasticsearchExport() error {
@@ -54,7 +51,7 @@ func ElasticsearchExport() error {
 	// 使用 Scroll API 进行后续的滚动查询，直到没有更多数据
 	for {
 		// 发起新的滚动查询，传入上一个查询返回的 ScrollId
-		res, err := global.ESClient.Scroll().ScrollId(*res.ScrollId_).Scroll(time.Minute * 2).Do(context.TODO())
+		res, err := global.ESClient.Scroll().ScrollId(*res.ScrollId_).Scroll(&durationvariant{}).Do(context.TODO())
 		if err != nil {
 			// 如果请求出错，返回错误
 			return err
