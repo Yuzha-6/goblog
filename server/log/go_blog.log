@@ -4,3 +4,32 @@
 {"level":"INFO","time":"2025-05-26T22:17:50.546+0800","caller":"flag/enter.go:25","msg":"Successfully created table structure"}
 {"level":"INFO","time":"2025-05-27T08:50:52.413+0800","caller":"flag/enter.go:41","msg":"Successfully exported SQL data"}
 {"level":"INFO","time":"2025-05-28T20:35:12.108+0800","caller":"flag/enter.go:75","msg":"Successfully created ES indices"}
+{"level":"ERROR","time":"2025-06-01T12:02:18.574+0800","caller":"flag/enter.go:101","msg":"Failed to create an administrator:","error":"passwords do not match"}
+{"level":"ERROR","time":"2025-06-01T12:02:58.840+0800","caller":"flag/enter.go:101","msg":"Failed to create an administrator:","error":"passwords do not match"}
+{"level":"ERROR","time":"2025-06-01T12:03:21.177+0800","caller":"flag/enter.go:101","msg":"Failed to create an administrator:","error":"password length should be between 8 and 20 characters"}
+{"level":"ERROR","time":"2025-06-01T12:04:05.662+0800","caller":"flag/enter.go:101","msg":"Failed to create an administrator:","error":"Error 1292 (22007): Incorrect datetime value: '0000-00-00' for column 'update_at' at row 1"}
+{"level":"INFO","time":"2025-06-01T12:16:23.023+0800","caller":"flag/enter.go:103","msg":"Successfully created an administrator"}
+{"level":"INFO","time":"2025-06-01T12:20:54.495+0800","caller":"flag/enter.go:103","msg":"Successfully created an administrator"}
+{"level":"INFO","time":"2025-06-01T12:21:55.638+0800","caller":"flag/enter.go:103","msg":"Successfully created an administrator"}
+{"level":"INFO","time":"2025-06-01T14:21:58.657+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T14:33:28.909+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T14:42:07.373+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T14:44:28.635+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T14:45:59.504+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T14:47:35.407+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T14:48:32.432+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T14:49:28.076+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T14:49:50.004+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T15:00:00.471+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T17:52:01.111+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T17:53:39.373+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T17:53:59.928+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T17:54:20.451+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T17:57:26.177+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"ERROR","time":"2025-06-01T17:58:09.188+0800","caller":"api/base.go:20","msg":"cappppppppppp"}
+{"level":"INFO","time":"2025-06-01T17:58:35.639+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"ERROR","time":"2025-06-01T17:58:46.456+0800","caller":"api/base.go:20","msg":"cappppppppppp"}
+{"level":"ERROR","time":"2025-06-01T18:00:42.963+0800","caller":"api/base.go:20","msg":"cappppppppppp"}
+{"level":"INFO","time":"2025-06-01T18:02:50.788+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T18:59:36.220+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-01T19:20:30.314+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}

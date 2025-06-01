@@ -9,6 +9,6 @@ import (
 type MODEL struct {
 	ID        uint           `json:"id" gorm:"primarykey"`
 	CreatedAt time.Time      `json:"created_at"`
-	UpdateAt  time.Time      `json:"updated_at"`
+	UpdateAt  time.Time      `json:"updated_at" gorm:"default:null"`
 	DeleteAt  gorm.DeletedAt `json:"-" gorm:"index"`
 }
