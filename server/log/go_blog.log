@@ -3,3 +3,4 @@
 {"level":"INFO","time":"2025-05-26T22:15:14.132+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
 {"level":"INFO","time":"2025-05-26T22:17:50.546+0800","caller":"flag/enter.go:25","msg":"Successfully created table structure"}
 {"level":"INFO","time":"2025-05-27T08:50:52.413+0800","caller":"flag/enter.go:41","msg":"Successfully exported SQL data"}
+{"level":"INFO","time":"2025-05-28T20:35:12.108+0800","caller":"flag/enter.go:75","msg":"Successfully created ES indices"}
