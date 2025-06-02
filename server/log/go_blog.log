@@ -33,3 +33,4 @@
 {"level":"INFO","time":"2025-06-01T18:02:50.788+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
 {"level":"INFO","time":"2025-06-01T18:59:36.220+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
 {"level":"INFO","time":"2025-06-01T19:20:30.314+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
+{"level":"INFO","time":"2025-06-02T09:49:10.616+0800","caller":"core/server.go:25","msg":"server run success on ","address":"0.0.0.0:8080"}
