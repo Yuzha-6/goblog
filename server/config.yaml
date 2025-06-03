@@ -17,8 +17,8 @@ es:
     password: ""
     is_console_print: true
 gaode:
-    enable: false
-    key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    enable: true
+    key: 39470b8435ad46625044940510bb55df
 jwt:
     access_token_secret: W4fOH8cc2yBGxgN7K8U2eXYJYLZQ4fUDsBGK8Rpxltc=
     refresh_token_secret: IVt7bjzycU6Psy6EfHbc-9LKswcWNfczILSf3vs5uik=

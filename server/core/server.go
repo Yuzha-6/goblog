@@ -3,6 +3,7 @@ package core
 import (
 	"server/global"
 	"server/initialize"
+	"server/service"
 
 	"go.uber.org/zap"
 	// "server/service"
@@ -19,7 +20,7 @@ func RunServer() {
 
 	// 加载所有的 JWT 黑名单，存入本地缓存
 	// TODO service.LoadAll()
-
+	service.LoadAll()
 	// 初始化服务器并启动
 	s := initServer(addr, Router)
 	global.Log.Info("server run success on ", zap.String("address", addr))
