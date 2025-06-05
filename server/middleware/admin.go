@@ -13,7 +13,7 @@ func AdminAuth() gin.HandlerFunc {
 		roleID := utils.GetRoleID(c)
 
 		if roleID != appTypes.Admin {
-			response.Forbidden("Access denied.Admin privileges are required.", c)
+			response.Forbidden("Access denied. Adimin privileges are required", c)
 			c.Abort()
 			return
 		}

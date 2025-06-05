@@ -20,9 +20,9 @@ func JWTAuth() gin.HandlerFunc {
 		accessToken := utils.GetAccessToken(c)
 		refreshToken := utils.GetRefreshToken(c)
 
-		if jwtService.IsInBlacklis(refreshToken) {
+		if jwtService.IsInBlacklist(refreshToken) {
 			utils.ClearRefreshToken(c)
-			response.NoAuth("Account logged int from another location or token is invalid", c)
+			response.NoAuth("Account logged in from another location or token is invalid", c)
 			c.Abort()
 			return
 		}
@@ -57,7 +57,7 @@ func JWTAuth() gin.HandlerFunc {
 				newAccessToken, err := j.CreateAccessToken(newAccessClaims)
 				if err != nil {
 					utils.ClearRefreshToken(c)
-					response.NoAuth("Failed to create new access token", c)
+					response.NoAuth("Faild to create new access token", c)
 					c.Abort()
 					return
 				}

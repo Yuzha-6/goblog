@@ -1,7 +1,6 @@
 package api
 
 import (
-	"fmt"
 	"server/global"
 	"server/model/request"
 	"server/model/response"
@@ -38,14 +37,13 @@ func (baseApi *BaseApi) Captcha(c *gin.Context) {
 		response.FailWithMessage("Failed to generate captcha", c)
 		return
 	}
-	fmt.Print(id)
-	fmt.Print(b64s)
 	response.OkWithData(response.Captcha{
 		CaptchaID: id,
 		PicPath:   b64s,
 	}, c)
 }
 
+// SendEmailVerificationCode 发送邮箱验证码
 func (baseApi *BaseApi) SendEmailVerificationCode(c *gin.Context) {
 	var req request.SendEmailVerificationCode
 	err := c.ShouldBindJSON(&req)
@@ -54,13 +52,13 @@ func (baseApi *BaseApi) SendEmailVerificationCode(c *gin.Context) {
 		return
 	}
 	if store.Verify(req.CaptchaID, req.Captcha, true) {
-		err := baseService.SendEmailVerificationCode(c, req.Email)
+		err = baseService.SendEmailVerificationCode(c, req.Email)
 		if err != nil {
 			global.Log.Error("Failed to send email:", zap.Error(err))
-			response.FailWithMessage("Failed to send email:", c)
+			response.FailWithMessage("Failed to send email", c)
 			return
 		}
-		response.OkWithMessage("successfully sent email", c)
+		response.OkWithMessage("Successfully sent email", c)
 		return
 	}
 	response.FailWithMessage("Incorrect verification code", c)

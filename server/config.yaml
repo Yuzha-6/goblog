@@ -7,9 +7,9 @@ captcha:
 email:
     host: smtp.qq.com
     port: 465
-    from: 1737594382@qq.com
+    from: xxx@qq.com
     nickname: 发件人昵称
-    secret: kdrofgxzfatkedfb
+    secret: xxxxxxxxxxxxxxxx
     is_ssl: true
 es:
     url: http://127.0.0.1:9200
@@ -17,11 +17,11 @@ es:
     password: ""
     is_console_print: true
 gaode:
-    enable: true
-    key: 39470b8435ad46625044940510bb55df
+    enable: false
+    key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 jwt:
-    access_token_secret: W4fOH8cc2yBGxgN7K8U2eXYJYLZQ4fUDsBGK8Rpxltc=
-    refresh_token_secret: IVt7bjzycU6Psy6EfHbc-9LKswcWNfczILSf3vs5uik=
+    access_token_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    refresh_token_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     access_token_expiry_time: 2h
     refresh_token_expiry_time: 7d
     issuer: go_blog
@@ -58,7 +58,7 @@ system:
     env: release
     router_prefix: api
     use_multipoint: true
-    sessions_secret: W4fOH8cc2yBGxgN7K8U2eXYJYLZQ4fUDsBGK8Rpxltc=
+    sessions_secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     oss_type: local
 upload:
     size: 20
